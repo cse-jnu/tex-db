@@ -1,0 +1,12 @@
+{
+  "questions": [
+    {
+      "id": "B12M1",
+      "title": "Batch 12 Midterm 1",
+      "file": "B12M1.tex",
+      "examType": "Midterm",
+      "batch": 12,
+      "date": "2024-03-15"
+    }
+  ]
+}

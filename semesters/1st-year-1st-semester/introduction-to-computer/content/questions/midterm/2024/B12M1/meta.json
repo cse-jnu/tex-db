@@ -1,0 +1,32 @@
+{
+  "id": "B12M1",
+  "title": "Batch 12 Midterm 1",
+  "description": "Introduction to Computer midterm examination for Batch 12",
+  "type": "question",
+  "format": "md",
+  "difficulty": "medium",
+  "topics": ["computer-fundamentals", "basics", "introduction"],
+  "tags": ["midterm", "batch-12", "exam"],
+  "language": "en",
+  "version": "1.0.0",
+  "created_at": "2024-03-15T00:00:00Z",
+  "updated_at": "2025-09-19T00:00:00Z",
+  "created_by": "System",
+  "updated_by": "System Migration",
+  "status": "published",
+  "exam_details": {
+    "exam_type": "Midterm",
+    "batch": 12,
+    "year": 2024,
+    "date": "2024-03-15",
+    "duration": "3 hours",
+    "total_marks": 100
+  },
+  "dependencies": ["intro-to-computer-intro"],
+  "related_content": [],
+  "assets": {
+    "images": [],
+    "files": []
+  },
+  "legacy_file": "B12M1.tex"
+}

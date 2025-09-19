@@ -1,0 +1,24 @@
+{
+  "id": "intro-to-computer-intro",
+  "title": "Introduction",
+  "description": "Introduction to Computer Science fundamentals",
+  "type": "note",
+  "format": "md",
+  "difficulty": "easy",
+  "topics": ["computer-science", "fundamentals", "overview"],
+  "tags": ["overview", "basics", "introduction"],
+  "language": "en",
+  "version": "1.0.0",
+  "created_at": "2024-01-01T00:00:00Z",
+  "updated_at": "2025-09-19T00:00:00Z",
+  "created_by": "Lionel Messi",
+  "updated_by": "System Migration",
+  "status": "published",
+  "dependencies": [],
+  "related_content": [],
+  "assets": {
+    "images": [],
+    "files": []
+  },
+  "legacy_file": "introduction.tex"
+}

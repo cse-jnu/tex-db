@@ -1,0 +1,77 @@
+{
+  "supported_formats": [
+    {
+      "extension": "md",
+      "name": "Markdown",
+      "description": "Primary content format for better readability",
+      "mime_type": "text/markdown",
+      "priority": 1,
+      "use_cases": ["notes", "explanations", "documentation"]
+    },
+    {
+      "extension": "tex",
+      "name": "LaTeX",
+      "description": "Mathematical and scientific content",
+      "mime_type": "application/x-latex",
+      "priority": 2,
+      "use_cases": [
+        "mathematical-content",
+        "formal-documents",
+        "academic-papers"
+      ]
+    },
+    {
+      "extension": "pdf",
+      "name": "PDF",
+      "description": "Compiled documents for offline access",
+      "mime_type": "application/pdf",
+      "priority": 3,
+      "use_cases": ["final-documents", "offline-access", "printing"]
+    },
+    {
+      "extension": "json",
+      "name": "JSON",
+      "description": "Structured data and metadata",
+      "mime_type": "application/json",
+      "priority": 4,
+      "use_cases": ["metadata", "structured-data", "configuration"]
+    }
+  ],
+  "content_types": [
+    {
+      "type": "note",
+      "name": "Study Notes",
+      "description": "Educational notes and explanations",
+      "required_formats": ["md"],
+      "optional_formats": ["tex", "pdf"]
+    },
+    {
+      "type": "question",
+      "name": "Exam Questions",
+      "description": "Past exam questions and practice problems",
+      "required_formats": ["md"],
+      "optional_formats": ["tex", "pdf"]
+    },
+    {
+      "type": "solution",
+      "name": "Solutions",
+      "description": "Step-by-step solutions to problems",
+      "required_formats": ["md"],
+      "optional_formats": ["tex", "pdf"]
+    },
+    {
+      "type": "assignment",
+      "name": "Assignments",
+      "description": "Course assignments and projects",
+      "required_formats": ["md"],
+      "optional_formats": ["pdf"]
+    },
+    {
+      "type": "lab",
+      "name": "Lab Manuals",
+      "description": "Laboratory experiments and manuals",
+      "required_formats": ["md"],
+      "optional_formats": ["pdf"]
+    }
+  ]
+}

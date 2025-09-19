@@ -1,0 +1,208 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "content_metadata": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the content"
+        },
+        "title": {
+          "type": "string",
+          "description": "Human readable title"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description of the content"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "note",
+            "question",
+            "solution",
+            "assignment",
+            "lab",
+            "resource"
+          ],
+          "description": "Type of content"
+        },
+        "format": {
+          "type": "string",
+          "enum": ["md", "tex", "pdf", "json"],
+          "description": "Primary format of the content"
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["easy", "medium", "hard"],
+          "description": "Difficulty level"
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Related topics/concepts"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Content tags for categorization"
+        },
+        "language": {
+          "type": "string",
+          "enum": ["en"],
+          "default": "en",
+          "description": "Content language"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Semantic version number"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        },
+        "created_by": {
+          "type": "string",
+          "description": "Content creator"
+        },
+        "updated_by": {
+          "type": "string",
+          "description": "Last updater"
+        },
+        "reviewed_by": {
+          "type": "string",
+          "description": "Content reviewer"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "review", "published"],
+          "default": "draft",
+          "description": "Content status"
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Prerequisite content IDs"
+        },
+        "related_content": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Related content IDs"
+        },
+        "assets": {
+          "type": "object",
+          "properties": {
+            "images": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "type",
+        "format",
+        "version",
+        "created_at",
+        "created_by",
+        "status"
+      ]
+    },
+    "course_metadata": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Course code"
+        },
+        "name": {
+          "type": "string",
+          "description": "Course name"
+        },
+        "course_code": {
+          "type": "string",
+          "description": "Formatted course code"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["theory", "lab", "project"],
+          "description": "Course type"
+        },
+        "credits": {
+          "type": "number",
+          "description": "Course credits"
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Prerequisite courses"
+        },
+        "instructor": {
+          "type": "object",
+          "patternProperties": {
+            "^b\\d+$": {
+              "type": "string"
+            }
+          },
+          "description": "Instructors by batch"
+        },
+        "marks": {
+          "type": "object",
+          "properties": {
+            "midterm": {
+              "type": "number"
+            },
+            "final": {
+              "type": "number"
+            },
+            "class_test": {
+              "type": "number"
+            },
+            "attendance": {
+              "type": "number"
+            },
+            "assignment": {
+              "type": "number"
+            },
+            "total": {
+              "type": "number"
+            }
+          }
+        },
+        "slug": {
+          "type": "string",
+          "description": "URL-friendly identifier"
+        }
+      },
+      "required": ["code", "name", "type", "credits", "slug"]
+    }
+  }
+}

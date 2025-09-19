@@ -1,0 +1,18 @@
+{
+  "name": "CSE JnU Question Bank",
+  "short_name": "CSE JnU QBank",
+  "description": "A comprehensive question bank and study resource platform for CSE JnU students.",
+  "version": "2.0.0",
+  "type": "educational-platform",
+  "languages": ["en"],
+  "supported_formats": ["md", "tex", "pdf", "json"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cse-jnu/tex-db"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "created_at": "2024-01-01T00:00:00Z",
+  "updated_at": "2025-09-19T00:00:00Z",
+  "structure_version": "2.0"
+}
