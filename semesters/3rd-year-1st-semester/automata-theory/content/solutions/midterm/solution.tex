@@ -1,0 +1,16 @@
+% Automata Theory Midterm Solution (2025)
+\documentclass{article}
+\begin{document}
+\section*{Automata Theory: Midterm 2025 Solution}
+
+\textbf{Solution to Question 1:}
+
+\begin{enumerate}
+    \item $L$ is not regular. This can be shown using the Pumping Lemma for regular languages. Assume $L$ is regular. Let $p$ be the pumping length. Consider the string $s = a^p b^p$. According to the Pumping Lemma, $s$ can be split into $xyz$ such that $|xy| \leq p$, $|y| > 0$, and $xy^iz \in L$ for all $i \geq 0$. Since $|xy| \leq p$, $y$ consists only of $a$'s. Pumping $y$ will result in more $a$'s than $b$'s, so $xy^2z \notin L$. Contradiction. Thus, $L$ is not regular.
+    \item A context-free grammar (CFG) for $L$:
+    \begin{align*}
+        S &\to aSb \,|\, bSa \,|\, SS \,|\, \varepsilon
+    \end{align*}
+\end{enumerate}
+
+\end{document}
