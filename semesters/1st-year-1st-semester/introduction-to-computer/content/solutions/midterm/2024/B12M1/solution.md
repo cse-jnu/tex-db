@@ -1,7 +1,7 @@
 # Batch 12 Midterm 1 Solution - Introduction to Computer
 
 **Course:** CSE-1101 Introduction to Computer  
-**Solved by:** Md. Al-Amin Bhuiyan  
+**Solved by:** Ahsanul Hoque Abir  
 **Verification Status:** Verified
 
 ---

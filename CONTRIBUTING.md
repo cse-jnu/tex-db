@@ -37,6 +37,15 @@ git remote add upstream https://github.com/cse-jnu/tex-db.git
 git checkout -b feature/your-contribution-name
 ```
 
+### Branch Naming Convention
+
+- When contributing, please name your branch using your university ID (e.g., `B210305040`).
+- Example:
+  ```bash
+  git checkout -b B210305040
+  ```
+- This helps maintainers track contributions and ensures clarity in the repository.
+
 ## 📝 Content Guidelines
 
 ### 1. Content Structure
@@ -417,8 +426,26 @@ After studying this note, you will be able to:
 
 - **GitHub Issues**: For bugs and feature requests
 - **GitHub Discussions**: For general questions
-- **Email**: [maintainer email if available]
+- **Email**: contact.ahsanul@gmail.com
 
 ---
 
 **Thank you for contributing to TEX-DB! Your efforts help fellow students succeed in their academic journey.** 🎓
+
+## 🛠️ Automated Index Generation (CI/CD)
+
+This project uses GitHub Actions to automatically generate and validate all `index.json` files on every pull request to the `main` branch.
+
+- You **do not have to** manually update `index.json` files.
+- If you want to check locally, run:
+  ```bash
+  npm run generate-index
+  ```
+- The CI/CD pipeline will:
+  1. Install dependencies
+  2. Run `npm run generate-index` and `npm run validate`
+  3. Auto-commit any changes to `index.json` if needed
+
+**Workflow file:** `.github/workflows/generate-index.yml`
+
+---

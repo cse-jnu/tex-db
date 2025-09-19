@@ -154,7 +154,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Contributors
 
 - **Lionel Messi** - Initial content contributor
-- **Md. Al-Amin Bhuiyan** - Solutions and review
+- **Ahsanul Hoque Abir** - Solutions and review
 
 ## 📞 Support
 

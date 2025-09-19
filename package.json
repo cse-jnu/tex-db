@@ -12,7 +12,9 @@
     "validate-all": "npm run validate-json && npm run check-structure && npm run lint-md",
     "migrate": "node scripts/migrate.js",
     "serve": "http-server . -p 8080 -c-1",
-    "test": "jest"
+    "test": "jest",
+    "update-readme-content": "node scripts/update-readme-content-count.js",
+    "update-contributors": "node scripts/update-contributors.js"
   },
   "repository": {
     "type": "git",

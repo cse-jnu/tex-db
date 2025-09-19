@@ -11,9 +11,9 @@
   "version": "1.0.0",
   "created_at": "2024-03-15T00:00:00Z",
   "updated_at": "2025-09-19T00:00:00Z",
-  "created_by": "Md. Al-Amin Bhuiyan",
+  "created_by": "Ahsanul Hoque Abir",
   "updated_by": "System Migration",
-  "reviewed_by": "Md. Al-Amin Bhuiyan",
+  "reviewed_by": "Ahsanul Hoque Abir",
   "status": "published",
   "question_id": "B12M1",
   "dependencies": ["B12M1"],
@@ -23,7 +23,7 @@
     "files": []
   },
   "solution_details": {
-    "solved_by": "Md. Al-Amin Bhuiyan",
+    "solved_by": "Ahsanul Hoque Abir",
     "notes": "This solution covers all the questions from Batch 12 Midterm 1.",
     "verification_status": "verified"
   },
